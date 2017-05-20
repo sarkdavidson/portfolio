@@ -1,18 +1,195 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
+
 	<meta charset="utf-8">
-	<title>Web编程基础 作业 4</title>
+	<title>Portfolio by sarkdavidson</title>
+	<meta name="description" content="SARKDAVIDSON - Portfolio ">
+	<meta name="keywords" content="sarkdavidson, portfolio, interaction, industrial, design">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" type="image/png" href="img/icon.png" />
+
+<!--Style-->
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-responsive.css">	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
 </head>
+
 <body>
-	<h1 align="center">邢庞锐</h1></br>
-	<h4 align="center">1418060059 | 工程技术学院 | 工业设计</h1></br>
-	<section align="center">
-		<a href="html/ArrayEG.html">a</a></br>
-		<a href="html/IndexOfEG.html">b</a></br>
-		<a href="html/StringEG.html">c</a></br>
-		<a href="html/SubstringEG.html">d</a></br>
-		<a href="html/Calculator.html">计算器</a></br>
-	</section>
+
+<!--Preloader-->
+
+<div class="preloader" id="preloader">
+		<div class="item">
+			<div class="spinner">
+			</div>
+		</div>
+</div>
+
+<div class="opacity-nav">
+
+				<div class="menu-index" id="buttons" style="z-index:999999">
+				<i class="fa	fa-close"></i>
+				</div>
+
+		<ul class="menu-fullscreen">
+			<li><a href="single.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="about-us.html">About us</a></li>
+			<li><a href="single.html">Blog</a>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+</div>
+
+
+	<!--Header-->
+<header id="fullscreen">
+	
+		<div class="logo" id="full"><a class="" href="index.html">Welcome.</a></div>
+		
+			<div class="menu-index" id="button">
+			<i class="fa fa-bars"></i>
+			</div>
+
+</header>
+
+	<div class="clear"></div>
+
+	<!--Content-->
+
+<div class="content" id="ajax-content">
+
+	<div class="text-intro" id="site-type">
+
+		<h1>Sark Davidson</h1>
+		<h1 class="typewrite"><span>Portfolio</span></h1> <!--Change on script.js-->
+		<p>Welcome to my </p>
+
+	</div>
+		<!--Portfolio grid-->
+		<ul class="portfolio-grid" id="portfolio-sidebar">
+
+			<li class="grid-item">
+				<img src="img/portfolio/1.jpg">
+					<a class="" href="single.html">	
+						<div class="grid-hover">
+							<h1>Single</h1>
+							<p>Branding</p>
+						</div>
+					</a>	
+			</li>
+
+			<li class="grid-item">
+				<img src="img/portfolio/5.jpg">
+					<a class="" href="single-fullscreen.html">	
+						<div class="grid-hover">
+							<h1>Full Screen</h1>
+							<p>Branding</p>
+						</div>
+					</a>			
+			</li>		
+			
+			<li class="grid-item">
+				<img src="img/portfolio/2.jpg">
+					<a class="" href="#">	
+						<div class="grid-hover">
+							<h1>Single</h1>
+							<p>Branding</p>
+						</div>
+					</a>			
+			</li>	
+			
+			<li class="grid-item">
+				<img src="img/portfolio/3.jpg">
+					<a class="" href="#">	
+						<div class="grid-hover">
+							<h1>Single</h1>
+							<p>Branding</p>
+						</div>
+					</a>			
+			</li>		
+
+			<li class="grid-item">
+				<img src="img/portfolio/4.jpg">
+					<a class="" href="#">	
+						<div class="grid-hover">
+							<h1>Single</h1>
+							<p>Branding</p>
+						</div>
+					</a>			
+			</li>		
+
+			<li class="grid-item">
+				<img src="img/portfolio/6.jpg">
+					<a class="" href="#">	
+						<div class="grid-hover">
+							<h1>Single</h1>
+							<p>Branding</p>
+						</div>
+					</a>			
+			</li>	
+
+		</ul>
+
+</div>
+
+	<!--Home Sidebar-->
+
+<div id="ajax-sidebar">
+
+	<div class="home-sidebar" style="background-image:url('img/home-sidebar.jpg')" id="hero">
+		<div class="parallax-option" data-jkit="[parallax:strength=0.1;axis=both]">
+		<div class="parallax parallax1"><img src="img/business-card-2.png"></div>
+		</div>
+
+	<div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
+		<div class="parallax parallax1"><img src="img/business-card.png"></div>
+		</div>
+	</div>
+</div>
+
+	
+	<!--Footer-->
+
+<footer>
+
+	<div class="footer-margin">
+		<div class="social-footer">
+			<a href="https://www.instagram.com/sarkdavidson"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.behance.net/sarkdavidson"><i class="fa fa-behance"></i></a>
+			<a href="https://www.pinterest.com/sarkdavidson/"><i class="fa fa-pinterest"></i></a>
+		</div>		 
+		<div class="copyright">© Copyright 2017 sarkdavidson All Rights Reserved.</div>
+	</div>
+</footer>
+
+
+<!--Scripts-->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+	<script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+	<script src="js/typed.js" type="text/javascript"></script>
+	<script src="js/masonry.pkgd.min.js" type="text/javascript"></script>	
+	<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>		
+	<script src="js/jquery.jkit.1.2.16.min.js"></script>
+ 
+	<script src="js/script.js" type="text/javascript"></script>
+	<script>
+			$('#button, #buttons').on('click', function() {
+			$( ".opacity-nav" ).fadeToggle( "fast", "linear" );
+		// Animation complete.
+		});
+	</script>
 </body>
 </html>
