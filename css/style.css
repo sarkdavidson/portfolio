@@ -338,6 +338,9 @@ header li:hover ul{
 CONTENT
 **************************
 */
+.intro-text{
+	color: black;
+}
 
 .hero-image{
 	position:relative;
