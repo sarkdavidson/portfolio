@@ -13,7 +13,7 @@ body{
 		color: #fff;
 		text-shadow: none;
 	}
-	
+
 	::-moz-selection {
 		background: #000;
 		color: #fff;
@@ -32,7 +32,7 @@ a{
 	-moz-transition: all 0.2s ease-in;
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
+	transition: all 0.2s ease-in;
 	border-bottom:1px solid #dedede;
 }
 
@@ -47,7 +47,7 @@ strong{
 
 /*
 **************************
-PRELOADER
+PRELOADER - Loading Animation
 **************************
 */
 
@@ -56,30 +56,38 @@ PRELOADER
 	top:0;
 	width:100%;
 	height:100%;
-	background:white;
-	z-index:999;
+	background:#D7DBDE;
+	z-index:99999;
+
 }
- 
+
 .preloader .item{
 	position:absolute;
-	width:50px;
-	height:50px;
-	left:50%;
-	top:50%;
-	margin-left:-25px;
-	margin-top:-25px;
-} 
+	margin-left: 20px;
+	margin-top: 20px;
 
+}
+
+/*
 .spinner {
 	width: 40px;
 	height: 40px;
 	margin: 0px auto;
 	background-color: #333;
-	border-radius: 100%;	
-	-webkit-animation: scaleout 1.0s infinite ease-in-out;
-	animation: scaleout 1.0s infinite ease-in-out;
+	border-radius: 100%;
+	animation: scaleout 0.6s infinite ease-in-out;
 }
+*/
 
+.preloadavatar {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	animation: scaleout 1s infinite ease-in-out;
+}
+/*
 @-webkit-keyframes scaleout {
 	0% { -webkit-transform: scale(0.0) }
 	100% {
@@ -87,16 +95,20 @@ PRELOADER
 		opacity: 0;
 	}
 }
+*/
 
 @keyframes scaleout {
-	0% { 
-		transform: scale(0.0);
-		-webkit-transform: scale(0.0);
-	} 100% {
-		transform: scale(1.0);
-		-webkit-transform: scale(1.0);
-		opacity: 0;
-	}
+	0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
@@ -146,7 +158,7 @@ ul.menu-fullscreen li > a:hover{
 	color:#ffffff;
 }
 
-	
+
 #full{
 	width:1140px;
 	position: relative;
@@ -181,11 +193,11 @@ header.boxed{
 	display:none;
 	background:none;
 	top:0;
-		-webkit-transition: background 0.2s ease-in;
-	-moz-transition: background 0.2s ease-in;
-	-ms-transition: background 0.2s ease-in;
-	-o-transition: background 0.2s ease-in;
-	transition: background 0.2s ease-in; 
+		-webkit-transition: background 0.15s ease-in;
+	-moz-transition: background 0.15s ease-in;
+	-ms-transition: background 0.15s ease-in;
+	-o-transition: background 0.15s ease-in;
+	transition: background 0.15s ease-in;
 }
 
 header.boxed .header-margin{
@@ -219,8 +231,9 @@ ul.social-icon a:hover{
 	position: fixed;
 	right: 5%;
 	top: 30px;
-	z-index: 99999;
-	padding:20px;
+	z-index: 999;
+	padding:14px;
+	border-radius: 1px;
 	background:black;
 	cursor:pointer;
 }
@@ -292,7 +305,7 @@ header li > a{
 	padding-left:25px;
 	font-weight:800;
 	line-height:80px;
-	display:inline-block;	
+	display:inline-block;
 	border-bottom:0;
 }
 
@@ -310,7 +323,7 @@ header li ul{
 
 header li ul li a{
 	line-height:50px;
-	padding-left:30px; 
+	padding-left:30px;
 	width:260px;
 }
 
@@ -327,16 +340,16 @@ CONTENT
 */
 
 .hero-image{
-	position:relative; 
-	width:100%; 
-	top:0; 
-	height:400px; 
+	position:relative;
+	width:100%;
+	top:0;
+	height:400px;
 	background: url('../img/full/full.jpg') center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;	
-	
+	background-size: cover;
+
 }
 
 .one-column{
@@ -437,17 +450,17 @@ HOME SIDEBAR
 */
 
 .home-sidebar{
-	top:0;
+	top:25px;
 	position:absolute;
-	width:33.3333%;
-	right:0;
-	height:100%;
-	background:#f4f4f4;
+	width:350px;
+	right:100px;
+	height:350px;
+	background:white;
 	z-index:9;
 	overflow:hidden;
 	background-size:100%;
 }
-
+/*
 .parallax{
 	position:absolute;
 }
@@ -455,6 +468,9 @@ HOME SIDEBAR
 .parallax-option{
 	position:absolute; width:100%; height:100%;
 }
+
+*/
+
 
 /*
 **************************
@@ -528,7 +544,7 @@ li.grid-item{
 	-moz-transition: all 0.2s ease-in;
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
+	transition: all 0.2s ease-in;
 }
 
 .grid-hover:hover{
@@ -588,7 +604,7 @@ footer{
 
 #footer-left{text-align:left;}
 
-.footer-margin 
+.footer-margin
 .copyright{
 	color: #686868;
 	letter-spacing: 1px;
@@ -599,7 +615,7 @@ footer{
 	float: left;
 }
 
-.footer-margin 
+.footer-margin
 .social-footer{
 	color: #686868;
 	letter-spacing: 1px;
@@ -609,18 +625,17 @@ footer{
 	float: left;
 }
 
-.footer-margin 
+.footer-margin
 .social-footer a{
 	font-size:15px;
 	color:black;
 	padding: 20px;
 }
 
-.footer-margin 
+.footer-margin
 .social-footer a:hover{
 	color:#c3c3c3;
 }
-
 
 /*
 **************************
@@ -679,7 +694,7 @@ input.button-submit{
 }
 
 input:focus{
-	background:#f4f4f4; 
+	background:#f4f4f4;
 }
 
 textarea{
@@ -701,7 +716,7 @@ textarea{
 	-moz-transition: all 0.2s ease-in;
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
+	transition: all 0.2s ease-in;
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
