@@ -105,11 +105,11 @@ PRELOADER - Loading Animation
     opacity: 0;
   }
   50% {
-    transform: scale(1.7);
+    transform: scale(1.4);
     opacity: 1;
   }
 	80% {
-		transform: scale(1.4);
+		transform: scale(1.2);
 		opacity: 0.8;
 	}
 	100% {
