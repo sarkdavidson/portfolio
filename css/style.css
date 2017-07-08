@@ -365,6 +365,7 @@ CONTENT
 	width:60%;
 	position:relative;
 	float:left;
+	padding-left: 10px;
 }
 
 .one-column p{
