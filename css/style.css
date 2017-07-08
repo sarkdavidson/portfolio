@@ -7,6 +7,9 @@ body{
 	overflow-y:scroll;
 	-webkit-font-smoothing: antialiased;
 }
+.hidden{
+	display: none;
+}
 
 ::selection {
 		background: #000;
@@ -391,7 +394,9 @@ CONTENT
 	width:1140px;
 	margin:50px auto;
 }
+.hidden{
 
+}
 
 .content .text-intro{
 	width: 1140px;
