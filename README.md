@@ -2,4 +2,4 @@
 
 *Service in busy.*
 
-**Redirecting to** [www.sarkrui.com](www.sarkrui.com )
+**Redirecting to** [www.sarkrui.com](http://www.sarkrui.com )
